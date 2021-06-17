@@ -35,7 +35,7 @@ import java.util.List;
 public class View extends Div {
 
     public View() {
-        add(new H5("Vaadin Grid Scroller Demo 1.0.0 (Vaadin 14.6.3"));
+        add(new H5("Vaadin Grid Scroller Demo 1.0.1 (Vaadin 14.6.3"));
 
         Grid<String> grid = new Grid<>();
         for (int i = 0; i < 25; i++) {

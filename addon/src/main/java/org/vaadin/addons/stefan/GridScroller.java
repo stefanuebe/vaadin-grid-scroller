@@ -72,7 +72,7 @@ public class GridScroller {
      */
     @SuppressWarnings("UnusedReturnValue")
     private static PendingJavaScriptResult modifyScrollValue(Grid<?> grid, Double value, String scrollProperty) {
-        return grid.getElement().executeJs("this.$.table." + scrollProperty + " = $0 ?? 0;", value);
+        return grid.getElement().executeJs("this.$.table[$1] = $0;", value != null ? value : 0, scrollProperty);
     }
 
     /**
@@ -84,7 +84,9 @@ public class GridScroller {
      * @param top new scroll position for top / vertical / y
      */
     public static void scroll(Grid<?> grid, Double left, Double top) {
-        grid.getElement().executeJs("this.$.table.scrollLeft = $0 ?? 0; this.$.table.scrollTop = $1 ?? 0;", left, top);
+        grid.getElement().executeJs("this.$.table.scrollLeft = $0; this.$.table.scrollTop = $1;",
+                left != null ? left : 0,
+                top != null ? top : 0);
     }
 
     /**

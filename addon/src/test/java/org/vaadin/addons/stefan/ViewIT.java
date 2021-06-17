@@ -94,7 +94,8 @@ public class ViewIT extends AbstractViewTest {
     private void assertInRange(double expectedValue, double valueToTest, String property) {
         double lower = expectedValue - 1;
         double upper = expectedValue + 1;
-        Assert.assertTrue("Expected " + property + " to be between " + lower + " and " + upper,
+        Assert.assertTrue("Expected " + property + " to be between " + lower + " and " + upper
+                        + ", but it was " + valueToTest,
                 lower < valueToTest && valueToTest < upper);
     }
 

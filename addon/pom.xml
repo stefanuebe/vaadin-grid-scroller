@@ -3,11 +3,9 @@
 
     <groupId>org.vaadin.addons.stefan</groupId>
     <artifactId>grid-scroller</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <name>Grid Scroller</name>
     <description>A utility to read and set the scroll position of a Vaadin Grid</description>
-
-<!--    <packaging>war</packaging>-->
 
     <properties>
         <vaadin.version>14.6.3</vaadin.version>
