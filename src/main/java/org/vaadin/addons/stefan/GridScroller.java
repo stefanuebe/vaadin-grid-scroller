@@ -104,10 +104,9 @@ public class GridScroller {
 
 
     /**
-     * Sets the both scroll positions in pixels for the given grid. Passing {@code null} resets
+     * Sets the both scroll positions in pixels for the grid. Passing {@code null} resets
      * the respective scroll position.
      *
-     * @param grid  grid to modify
      * @param left new scroll position for left / horizontal / x
      * @param top new scroll position for top / vertical / y
      */
@@ -116,10 +115,9 @@ public class GridScroller {
     }
 
     /**
-     * Sets the both scroll positions in pixels for the given grid. Passing {@code null} resets
+     * Sets the both scroll positions in pixels for the grid. Passing {@code null} resets
      * the scroll positions.
      *
-     * @param grid  grid to modify
      * @param scrollPosition new scroll position
      */
     public void scroll(ScrollPosition scrollPosition) {

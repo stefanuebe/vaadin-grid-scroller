@@ -2,10 +2,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.vaadin.addons.stefan</groupId>
-    <artifactId>vaadin-grid-scroller</artifactId>
+    <artifactId>grid-scroller</artifactId>
     <version>1.0.0</version>
-    <name>Vaadin Grid Scroller</name>
+    <name>Grid Scroller</name>
     <description>A utility to read and set the scroll position of a Vaadin Grid</description>
+
+<!--    <packaging>war</packaging>-->
 
     <properties>
         <vaadin.version>14.4.6</vaadin.version>
@@ -262,6 +264,7 @@
             <id>production</id>
             <properties>
                 <vaadin.productionMode>true</vaadin.productionMode>
+                <packaging.type>war</packaging.type>
             </properties>
             <dependencies>
                 <dependency>
@@ -269,7 +272,7 @@
                     <artifactId>flow-server-production-mode</artifactId>
                 </dependency>
             </dependencies>
-            
+
             <build>
                 <plugins>
                     <plugin>
@@ -282,6 +285,14 @@
                                 </goals>
                             </execution>
                         </executions>
+                    </plugin>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-war-plugin</artifactId>
+                        <version>2.6</version>
+                        <configuration>
+                            <failOnMissingWebXml>false</failOnMissingWebXml>
+                        </configuration>
                     </plugin>
                 </plugins>
             </build>
