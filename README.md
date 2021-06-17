@@ -4,7 +4,7 @@ A utility addon that provides a simply api to read and set the scroll position. 
 can be used with a wrapped grid or via static methods.
 
 ## Usage
-### Setting scroll positions
+### Set scroll positions
 ```
 Grid<?> grid = new Grid<>();
 // ... init grid
