@@ -46,8 +46,3 @@ gridScroller.readScrollPositions(scrollPosition ->
 GridScroller.readScrollPositions(grid, scrollPosition -> 
     result.setText(scrollPosition.getLeft() + "," + scrollPosition.getTop()))
 ```
-
-## Development instructions
-Starting the test/demo server:
-1. Run `mvn jetty:run`.
-2. Open http://localhost:8080 in the browser.
