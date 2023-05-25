@@ -21,7 +21,7 @@ import com.vaadin.flow.component.html.testbench.SpanElement;
 import com.vaadin.flow.component.textfield.testbench.NumberFieldElement;
 import org.junit.Assert;
 import org.junit.Test;
-import org.vaadin.addons.stefan.GridScroller.ScrollPosition;
+import org.vaadin.addons.stefan.gridscroller.GridScroller.ScrollPosition;
 
 public class ViewIT extends AbstractViewTest {
 

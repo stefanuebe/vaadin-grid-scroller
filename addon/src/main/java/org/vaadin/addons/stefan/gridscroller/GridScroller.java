@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.vaadin.addons.stefan;
+package org.vaadin.addons.stefan.gridscroller;
 
 import com.vaadin.flow.component.grid.Grid;
 import com.vaadin.flow.component.page.PendingJavaScriptResult;

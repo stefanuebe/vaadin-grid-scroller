@@ -17,3 +17,12 @@ webpack.generated.js
 /addon/package.json
 /addon/package-lock.json
 /addon/webpack.config.js
+/demo/frontend/generated/
+/demo/frontend/index.html
+/demo/tsconfig.json
+/demo/.npmrc
+/demo/.pnpmfile.cjs
+/demo/pnpm-lock.yaml
+/demo/types.d.ts
+/demo/vite.config.ts
+/demo/vite.generated.ts

@@ -1,4 +1,4 @@
-/*
+package org.vaadin.addons.stefan.gridscroller;/*
  * Copyright 2021 Stefan Uebe
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,14 +19,13 @@ import com.vaadin.flow.component.combobox.ComboBox;
 import com.vaadin.flow.component.grid.Grid;
 import com.vaadin.flow.component.grid.HeaderRow;
 import com.vaadin.flow.component.html.Div;
-import com.vaadin.flow.component.html.H1;
 import com.vaadin.flow.component.html.H5;
 import com.vaadin.flow.component.html.Span;
 import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
 import com.vaadin.flow.component.textfield.NumberField;
 import com.vaadin.flow.data.value.ValueChangeMode;
 import com.vaadin.flow.router.Route;
-import org.vaadin.addons.stefan.GridScroller;
+import org.vaadin.addons.stefan.gridscroller.GridScroller;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -35,7 +34,7 @@ import java.util.List;
 public class View extends Div {
 
     public View() {
-        add(new H5("Vaadin Grid Scroller Demo 1.0.1 (Vaadin 14.6.3"));
+        add(new H5("Vaadin Grid Scroller Demo 1.0.3"));
 
         Grid<String> grid = new Grid<>();
         for (int i = 0; i < 25; i++) {

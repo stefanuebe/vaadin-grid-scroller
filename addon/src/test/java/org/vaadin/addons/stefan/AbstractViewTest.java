@@ -9,6 +9,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import com.vaadin.testbench.ScreenshotOnFailureRule;
 import com.vaadin.testbench.TestBench;
 import com.vaadin.testbench.parallel.ParallelTest;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 /**
  * Base class for ITs
@@ -51,7 +52,9 @@ public abstract class AbstractViewTest extends ParallelTest {
         if (isUsingHub()) {
             super.setup();
         } else {
-            setDriver(TestBench.createDriver(new ChromeDriver()));
+            ChromeOptions options = new ChromeOptions();
+            options.setHeadless(true);
+            setDriver(TestBench.createDriver(new ChromeDriver(options)));
         }
         getDriver().get(getURL(route));
     }
